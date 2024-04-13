@@ -1,3 +1,20 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:58a12e41994ea8bc9d40e1ef0afa0523e214992e4c2ad7ba363b7daf1bd152f3
-size 905
+import { Route, Routes } from "react-router-dom";
+
+import Dashboard from "./pages/Dashboard";
+import Page1 from "./pages/page1";
+import Page2 from "./pages/page2";
+import Page3 from "./pages/page3";
+
+function App() {
+  return (
+    <Routes>
+      <Route path="/" element={<Dashboard />}>
+        <Route path="" element={<Page1 />} />
+        <Route path="/page2" element={<Page2 />} />
+        <Route path="/page3" element={<Page3 />} />
+      </Route>
+    </Routes>
+  );
+}
+
+export default App;
