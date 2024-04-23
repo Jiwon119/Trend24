@@ -1,21 +1,3 @@
-import styled from "styled-components";
-
-const KeywordBookList = () => {
-  return (
-    <Container>
-      <Title>추천 책 리스트</Title>
-    </Container>
-  );
-};
-
-const Container = styled.div`
-  padding: 30px;
-`;
-
-const Title = styled.div`
-  font-size: 30px;
-  font-weight: bold;
-  margin-bottom: 15px;
-`;
-
-export default KeywordBookList;
+version https://git-lfs.github.com/spec/v1
+oid sha256:b1e825d2eb73b5282486b395e5dbfd8a496b4cb2acfe7304b01b37008728dc2f
+size 1637

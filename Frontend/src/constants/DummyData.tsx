@@ -1,18 +1,3 @@
-export const categoryListData: string[] = [
-  "건강",
-  "게임",
-  "과학",
-  "금융",
-  "IT",
-  "부동산",
-  "취미 & 레저",
-];
-
-export const categoryKeywordData: string[] = [
-  "인공지능",
-  "IoT",
-  "블록체인",
-  "자동화",
-  "IT",
-  "빅데이터",
-];
+version https://git-lfs.github.com/spec/v1
+oid sha256:21fd280a7b9d62219ba18c744d71b14088080477f91bb9a144e34fd716ae8c02
+size 2511
