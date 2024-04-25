@@ -1,3 +1,19 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:f438cfb1cbe36085ed61828a9c75e48fd622dd03fd619dc4718077e2db2a6908
-size 331
+import styled from "styled-components";
+
+const ClickDataChart = () => {
+  return (
+    <ClickDataChartContainer>
+      <div>ClickDataChart</div>
+    </ClickDataChartContainer>
+  );
+};
+
+const ClickDataChartContainer = styled.div`
+  width: 100%;
+  height: 100%;
+  grid-column: 4 / 7;
+  grid-row: 1 / 4;
+  border: 1px solid #000;
+`;
+
+export default ClickDataChart;
