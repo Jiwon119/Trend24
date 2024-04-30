@@ -1,18 +1,3 @@
-import styled from "styled-components";
-import Table from "../../common/table/Table";
-
-const KeywordRank = () => {
-  return (
-    <ATrendKeywordContainer>
-      <Table />
-    </ATrendKeywordContainer>
-  );
-};
-
-const ATrendKeywordContainer = styled.div`
-  width: 100%;
-  height: 100%;
-  border: 1px solid #000;
-`;
-
-export default KeywordRank;
+version https://git-lfs.github.com/spec/v1
+oid sha256:a921c3d58c6845c494af0b7e4260127efa227ec282f72dbdc3bea01fb7e2a553
+size 1455
