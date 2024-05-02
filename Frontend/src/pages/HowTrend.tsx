@@ -1,15 +1,3 @@
-import styled from "styled-components";
-
-const HowTrend = () => {
-  return <HowTrendContainer>HowTrend</HowTrendContainer>;
-};
-
-const HowTrendContainer = styled.div`
-  height: 100%;
-  width: 100%;
-  display: grid;
-  grid-template-columns: repeat(6, 1fr);
-  grid-template-rows: repeat(6, 1fr);
-`;
-
-export default HowTrend;
+version https://git-lfs.github.com/spec/v1
+oid sha256:8a2e0f6a3fc6c3a34a985533717bad08c1d55796f3b430a73fa1d6fb2d095db2
+size 1861
