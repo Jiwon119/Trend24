@@ -1,15 +1,3 @@
-import styled from "styled-components";
-
-const BookDrawer = () => {
-  return <BookDrawerContainer>BookDrawer</BookDrawerContainer>;
-};
-
-const BookDrawerContainer = styled.div`
-  height: 100%;
-  width: 100%;
-  display: grid;
-  grid-template-columns: repeat(6, 1fr);
-  grid-template-rows: repeat(6, 1fr);
-`;
-
-export default BookDrawer;
+version https://git-lfs.github.com/spec/v1
+oid sha256:54bf6ffd3f56bbb9ba67c250647d2a9c423a20913d9cd0e0e786c5666b593fc8
+size 2035
