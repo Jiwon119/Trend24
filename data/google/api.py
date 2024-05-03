@@ -1,3 +1,4 @@
+import MySQLdb
 from pytrends.request import TrendReq
 from datetime import datetime
 
