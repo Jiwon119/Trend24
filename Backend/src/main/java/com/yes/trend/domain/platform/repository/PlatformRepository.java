@@ -1,3 +1,7 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:71382b60971aa1bafc98093a59eb80e5e8805100fa32e794927f28dca5f4f9fa
-size 249
+package com.yes.trend.domain.platform.repository;
+
+import org.springframework.data.jpa.repository.JpaRepository;
+import com.yes.trend.domain.platform.entity.Platform;
+
+public interface PlatformRepository extends JpaRepository<Platform, Integer> {
+}

@@ -1,3 +1,7 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:63c39d5f865bb4cc2d9212d44d1e5537c0bd2ca8c54c0f6ee6cbbd292acb73c0
-size 229
+package com.yes.trend.domain.book.repository;
+
+import org.springframework.data.jpa.repository.JpaRepository;
+import com.yes.trend.domain.book.entity.Book;
+
+public interface BookRepository extends JpaRepository<Book, Integer> {
+}

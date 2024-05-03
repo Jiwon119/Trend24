@@ -1,3 +1,7 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:eea5dd7376272ce60ae66557bca640962ab8762674bf53462c3ca41b9ea6761f
-size 244
+package com.yes.trend.domain.boxbook.repository;
+
+import org.springframework.data.jpa.repository.JpaRepository;
+import com.yes.trend.domain.boxbook.entity.BoxBook;
+
+public interface BoxBookRepository extends JpaRepository<BoxBook, Integer> {
+}
