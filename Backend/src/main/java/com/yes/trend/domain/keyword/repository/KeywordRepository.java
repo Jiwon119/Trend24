@@ -1,7 +1,3 @@
-package com.yes.trend.domain.keyword.repository;
-
-import org.springframework.data.jpa.repository.JpaRepository;
-import com.yes.trend.domain.keyword.entity.Keyword;
-
-public interface KeywordRepository extends JpaRepository<Keyword, Integer> {
-}
+version https://git-lfs.github.com/spec/v1
+oid sha256:423311e7df343af066ab5da6e29c9618ccb5bbb7271717c36d5c95a722b4c0bf
+size 245

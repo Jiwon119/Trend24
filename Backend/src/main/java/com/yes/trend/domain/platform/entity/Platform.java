@@ -1,19 +1,3 @@
-package com.yes.trend.domain.platform.entity;
-
-import com.yes.trend.common.entity.BaseEntity;
-import jakarta.persistence.Column;
-import jakarta.persistence.Entity;
-import jakarta.persistence.Table;
-import lombok.Getter;
-import lombok.NoArgsConstructor;
-import lombok.AccessLevel;
-
-@Entity
-@Table(name = "platform")
-@Getter
-@NoArgsConstructor(access = AccessLevel.PROTECTED)
-public class Platform extends BaseEntity {
-
-	@Column(length = 100)
-	private String name;
-}
+version https://git-lfs.github.com/spec/v1
+oid sha256:53a86692426da579e369c9446de15f2b66761c423ce769a1aaafd8e14f8c0a55
+size 466

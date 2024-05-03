@@ -1,7 +1,3 @@
-package com.yes.trend.domain.recommendkeyword.repository;
-
-import org.springframework.data.jpa.repository.JpaRepository;
-import com.yes.trend.domain.recommendkeyword.entity.RecommendKeyword;
-
-public interface RecommendKeywordRepository extends JpaRepository<RecommendKeyword, Integer> {
-}
+version https://git-lfs.github.com/spec/v1
+oid sha256:421523c3e27e8c47ec883aea23bd57c9d202f75f5d94b2f58e92fdaf3a1bf04f
+size 290
