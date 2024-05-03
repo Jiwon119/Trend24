@@ -1,21 +1,3 @@
-package com.yes.trend.domain.box.entity;
-
-import com.yes.trend.common.entity.BaseEntity;
-import jakarta.persistence.Column;
-import jakarta.persistence.Entity;
-import jakarta.persistence.Table;
-import lombok.Getter;
-import lombok.NoArgsConstructor;
-import lombok.AccessLevel;
-
-@Entity
-@Table(name = "box")
-@Getter
-@NoArgsConstructor(access = AccessLevel.PROTECTED)
-public class Box extends BaseEntity {
-
-	@Column(length = 100)
-	private String name;
-
-	private Integer adminId;
-}
+version https://git-lfs.github.com/spec/v1
+oid sha256:7f43121aadfe46857a880604fca8c3b182f9921b091048768f42735a026a1376
+size 908
