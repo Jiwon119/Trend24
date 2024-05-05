@@ -1,7 +1,3 @@
-export const MobileWidth: string = "768px";
-export const TabletWidth: string = "1024px";
-export const DesktopWidth: string = "1200px";
-
-export const Mobile = `@media (max-width: ${MobileWidth})`;
-export const Tablet = `@media (max-width: ${TabletWidth})`;
-export const Desktop = `@media (max-width: ${DesktopWidth})`;
+version https://git-lfs.github.com/spec/v1
+oid sha256:aed63aa9660a2a8292cc095f89080053965d2d4656f2427f8caa0be65143767e
+size 362
