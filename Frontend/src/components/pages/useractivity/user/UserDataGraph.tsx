@@ -1,17 +1,3 @@
-import styled from "styled-components";
-
-const UserDataGraph = () => {
-  return (
-    <UserDataGraphContainer>
-      <div>UserDataGraph</div>
-    </UserDataGraphContainer>
-  );
-};
-
-const UserDataGraphContainer = styled.div`
-  grid-column: 1 / 4;
-  grid-row: 1 / 4;
-  border: 1px solid #000;
-`;
-
-export default UserDataGraph;
+version https://git-lfs.github.com/spec/v1
+oid sha256:e22969aa9bdfefae22d124051a0e7c55d14aa00450c14c275f41642c04079d49
+size 325
