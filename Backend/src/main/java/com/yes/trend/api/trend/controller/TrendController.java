@@ -1,14 +1,3 @@
-package com.yes.trend.api.trend.controller;
-
-import org.springframework.web.bind.annotation.RequestMapping;
-import org.springframework.web.bind.annotation.RestController;
-
-import lombok.RequiredArgsConstructor;
-import lombok.extern.slf4j.Slf4j;
-
-@Slf4j
-@RestController
-@RequiredArgsConstructor
-@RequestMapping("/trend")
-public class TrendController {
-}
+version https://git-lfs.github.com/spec/v1
+oid sha256:6fb836d9ad01e24d77c2633cd56ab4a75fa82a5cb0d411a50e8ecec5f0c7a218
+size 884
