@@ -1,3 +1,8 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:f3c4c73a26d7f2d417af15dc7db2302388072cd309aa39b389d6aa5d36a5139a
-size 226
+package com.yes.trend.api.drawer.mapper;
+
+import org.mapstruct.Mapper;
+import org.mapstruct.ReportingPolicy;
+
+@Mapper(componentModel = "spring", unmappedTargetPolicy = ReportingPolicy.IGNORE)
+public interface DrawerMapper {
+}
