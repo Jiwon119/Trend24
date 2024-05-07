@@ -1,3 +1,14 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:9d41d541c8c2659e6f2f76f0d4fbdaba643b300c8b81a6f2926c9b86f2ae60e2
-size 340
+package com.yes.trend.api.recommend.service;
+
+import org.springframework.stereotype.Service;
+import org.springframework.transaction.annotation.Transactional;
+
+import lombok.RequiredArgsConstructor;
+import lombok.extern.slf4j.Slf4j;
+
+@Service
+@RequiredArgsConstructor
+@Slf4j
+@Transactional(readOnly = true)
+public class RecommendService {
+}
