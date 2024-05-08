@@ -1,14 +1,3 @@
-package com.yes.trend.api.recommend.controller;
-
-import org.springframework.web.bind.annotation.RequestMapping;
-import org.springframework.web.bind.annotation.RestController;
-
-import lombok.RequiredArgsConstructor;
-import lombok.extern.slf4j.Slf4j;
-
-@Slf4j
-@RestController
-@RequiredArgsConstructor
-@RequestMapping("/recommend")
-public class RecommendController {
-}
+version https://git-lfs.github.com/spec/v1
+oid sha256:88f6b6566a1825a44671fc30a66b0af08cbd2cf11dad01eb1f0519a5863cfc09
+size 1685
