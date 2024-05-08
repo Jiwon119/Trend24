@@ -1,3 +1,8 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:55201516546390f4e8d47562713e2a7eeb0b302d9ca97aae8a14572610041658
-size 272
+package com.yes.trend.domain.trendcategory.repository;
+
+import org.springframework.data.jpa.repository.JpaRepository;
+
+import com.yes.trend.domain.trendcategory.entity.TrendCategory;
+
+public interface TrendCategoryRepository extends JpaRepository<TrendCategory, Byte> {
+}

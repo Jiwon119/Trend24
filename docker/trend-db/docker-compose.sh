@@ -1,3 +1,8 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:a871823e66cfd9cced6ec5eb2ef72afc198fefa4b156cf153ed60bbfb602ad9f
-size 242
+#!/bin/bash
+
+# .env 파일의 경로를 환경 변수로 설정
+# export ENV_FILE_PATH="./../../src/main/resources/.env"
+export ENV_FILE_PATH="./.env"
+
+# Docker Compose 실행
+docker-compose -f docker-compose.yml --env-file $ENV_FILE_PATH up
