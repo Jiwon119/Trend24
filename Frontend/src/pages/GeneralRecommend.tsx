@@ -1,20 +1,3 @@
-import styled from "styled-components";
-
-const GeneralRecommend = () => {
-  return (
-    <Container>
-      <h1>General Recommend</h1>
-    </Container>
-  );
-};
-
-const Container = styled.div`
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  height: 100%;
-  width: 100%;
-  background-color: #f9f9f9;
-`;
-
-export default GeneralRecommend;
+version https://git-lfs.github.com/spec/v1
+oid sha256:c5c57b1cbacf8e31e11f20e4409716106b9aa4d7a43de9ebe014187cc3045527
+size 1846
