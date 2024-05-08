@@ -1,22 +1,3 @@
-package com.yes.trend.domain.trendcategory.entity;
-
-import com.yes.trend.common.entity.BaseEntity;
-
-import jakarta.persistence.Column;
-import jakarta.persistence.Entity;
-import jakarta.persistence.Table;
-import lombok.AccessLevel;
-import lombok.Getter;
-import lombok.NoArgsConstructor;
-
-@Entity
-@Table(name = "trend_category")
-@Getter
-@NoArgsConstructor(access = AccessLevel.PROTECTED)
-public class TrendCategory extends BaseEntity {
-
-	@Column(length = 100)
-	private String name;
-
-	private Byte code;
-}
+version https://git-lfs.github.com/spec/v1
+oid sha256:6c8a9a1897a2a43bfabeacd954d45d3a520c76d0f37fb77e95474f5ee2137dc4
+size 747
