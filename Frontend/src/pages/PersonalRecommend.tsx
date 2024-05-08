@@ -1,20 +1,3 @@
-import styled from "styled-components";
-
-const PersonalRecommend = () => {
-  return (
-    <Container>
-      <h1>Personal Recommend</h1>
-    </Container>
-  );
-};
-
-const Container = styled.div`
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  height: 100%;
-  width: 100%;
-  background-color: #f9f9f9;
-`;
-
-export default PersonalRecommend;
+version https://git-lfs.github.com/spec/v1
+oid sha256:ec6e77531c959e02352980196c9248d5400b5bee4d61bd4e6be4fc7aa4daa96d
+size 3618
