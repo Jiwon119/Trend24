@@ -1,8 +1,3 @@
-package com.yes.trend.domain.origindata.repository;
-
-import org.springframework.data.jpa.repository.JpaRepository;
-
-import com.yes.trend.domain.origindata.entity.OriginData;
-
-public interface OriginDataRepository extends JpaRepository<OriginData, Integer> {
-}
+version https://git-lfs.github.com/spec/v1
+oid sha256:38ba4110617ff999b7cddda272ff86b94ee5f8004768c5849edc196afea78934
+size 260

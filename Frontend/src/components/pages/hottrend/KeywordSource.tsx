@@ -1,17 +1,3 @@
-import styled from "styled-components";
-
-interface KeywordProps {
-  keyword: string;
-}
-
-const KeywordSource = () => {
-  return (
-    <Container>
-      <h2>참고</h2>
-    </Container>
-  );
-};
-
-const Container = styled.div``;
-
-export default KeywordSource;
+version https://git-lfs.github.com/spec/v1
+oid sha256:1155295047322a754678c9a61050363ad4327a1d45607843d64604b76256b9c2
+size 256

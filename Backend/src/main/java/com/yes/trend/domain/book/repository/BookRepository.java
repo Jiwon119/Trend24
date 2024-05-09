@@ -1,11 +1,3 @@
-package com.yes.trend.domain.book.repository;
-
-import org.springframework.data.domain.Page;
-import org.springframework.data.domain.Pageable;
-import org.springframework.data.jpa.repository.JpaRepository;
-
-import com.yes.trend.domain.book.entity.Book;
-
-public interface BookRepository extends JpaRepository<Book, Integer> {
-	Page<Book> findAll(Pageable pageable);
-}
+version https://git-lfs.github.com/spec/v1
+oid sha256:844e15522adf7471f749d6220fcc2a37799f6fe02f40b6da541715a2992097c8
+size 364
