@@ -1,14 +1,3 @@
-package com.yes.trend.api.search.controller;
-
-import org.springframework.web.bind.annotation.RequestMapping;
-import org.springframework.web.bind.annotation.RestController;
-
-import lombok.RequiredArgsConstructor;
-import lombok.extern.slf4j.Slf4j;
-
-@Slf4j
-@RestController
-@RequiredArgsConstructor
-@RequestMapping("/search")
-public class SearchController {
-}
+version https://git-lfs.github.com/spec/v1
+oid sha256:806f6eb29b2ea8d859af3ae6abbe8a2da2cc8e799c9f18e83236afe41fa03f1e
+size 1028
