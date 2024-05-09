@@ -1,8 +1,3 @@
-#!/bin/bash
-
-# .env 파일의 경로를 환경 변수로 설정
-# export ENV_FILE_PATH="./../../src/main/resources/.env"
-export ENV_FILE_PATH="./.env"
-
-# Docker Compose 실행
-docker-compose -f docker-compose.yml --env-file $ENV_FILE_PATH up -d
+version https://git-lfs.github.com/spec/v1
+oid sha256:be99bd7efcb923a58af8e5a4d9aaabb624c95873ae726d8dbb28d6a611219127
+size 952
