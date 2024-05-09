@@ -1,14 +1,3 @@
-package com.yes.trend.api.search.service;
-
-import org.springframework.stereotype.Service;
-import org.springframework.transaction.annotation.Transactional;
-
-import lombok.RequiredArgsConstructor;
-import lombok.extern.slf4j.Slf4j;
-
-@Service
-@RequiredArgsConstructor
-@Slf4j
-@Transactional(readOnly = true)
-public class SearchService {
-}
+version https://git-lfs.github.com/spec/v1
+oid sha256:fab28b55c9656e52b75a73d08f6482417933f8680c9940a9261e016de14abed0
+size 1655
