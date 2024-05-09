@@ -1,13 +1,3 @@
-import { api } from "./apiConfig";
-
-export const getTrendKeyword = async () => {
-  // const accessToken = localStorage.getItem("accessToken");
-  try {
-    const response = await api.get("/trend/keywords");
-    console.log("response", response);
-    
-    return response.data.result.list;
-  } catch (error) {
-    console.log(error);
-  }
-};
+version https://git-lfs.github.com/spec/v1
+oid sha256:fbf896ecee8938451d2083312b3777a4470668540eb35b437f9e59b826969615
+size 682
