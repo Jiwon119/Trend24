@@ -1,3 +1,19 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:7df8e5c05efd5944cbbd0e6f667edcf30ce69c17c9e42d1f6dcbd6663e501fe3
-size 338
+import styled from "styled-components";
+
+const RTPKeyword = () => {
+  return (
+    <RTPKeywordContainer>
+      <div>RTPKeyword</div>
+    </RTPKeywordContainer>
+  );
+};
+
+const RTPKeywordContainer = styled.div`
+  width: 100%;
+  height: 100%;
+  grid-column: 1 / 7;
+  grid-row: 1 / 3;
+  border: 1px solid #000;
+`;
+
+export default RTPKeyword;
