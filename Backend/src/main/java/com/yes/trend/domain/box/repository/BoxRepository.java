@@ -1,10 +1,3 @@
-package com.yes.trend.domain.box.repository;
-
-import org.springframework.data.jpa.repository.JpaRepository;
-
-import com.yes.trend.domain.admin.entity.Admin;
-import com.yes.trend.domain.box.entity.Box;
-
-public interface BoxRepository extends JpaRepository<Box, Integer> {
-	boolean existsByNameAndAdmin(String name, Admin admin);
-}
+version https://git-lfs.github.com/spec/v1
+oid sha256:286bd322159420879812cc582b3ed600bbbb44729dedf3042defbc8cbe6e392c
+size 1054
