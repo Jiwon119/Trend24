@@ -1,3 +1,18 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:0e9283939c9f00221e5959f1d11a34998acec5a4f2b8ea8c688ca406ca698687
-size 382
+// export const MainColor = "#11101d";
+// export const SubColor = "#EFF3FC";
+
+const Colors = {
+  main: "#5f996d",
+  sub1: "#77a081",
+  sub2: "#8da392",
+  sub3: "#9ba09c",
+  sub4: "#c2cec5",
+  containerBackground: "#ffffff",
+  screenBackground: "#edf0ec",
+  text: "#000000",
+  hover: "#C1E1D2",
+  // F5F5F5
+};
+const Shadow = `-3px -3px 7px #ffffff73, 3px 3px 5px rgba(94, 104, 121, .288)`;
+
+export default Colors;
