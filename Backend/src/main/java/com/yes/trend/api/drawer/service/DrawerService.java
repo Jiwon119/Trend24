@@ -1,14 +1,3 @@
-package com.yes.trend.api.drawer.service;
-
-import org.springframework.stereotype.Service;
-import org.springframework.transaction.annotation.Transactional;
-
-import lombok.RequiredArgsConstructor;
-import lombok.extern.slf4j.Slf4j;
-
-@Service
-@RequiredArgsConstructor
-@Slf4j
-@Transactional(readOnly = true)
-public class DrawerService {
-}
+version https://git-lfs.github.com/spec/v1
+oid sha256:3a5948ef4ef3c5388a328918c33ba0a4bc26fe0c49a18be08cab6a1d14051ec7
+size 3460

@@ -1,14 +1,3 @@
-package com.yes.trend.api.drawer.controller;
-
-import org.springframework.web.bind.annotation.RequestMapping;
-import org.springframework.web.bind.annotation.RestController;
-
-import lombok.RequiredArgsConstructor;
-import lombok.extern.slf4j.Slf4j;
-
-@Slf4j
-@RestController
-@RequiredArgsConstructor
-@RequestMapping("/drawer")
-public class DrawerController {
-}
+version https://git-lfs.github.com/spec/v1
+oid sha256:ed877d17376660ea68a11909ac3d837ba39c14f63d1c447aa9eb3fd8f8894061
+size 2324
