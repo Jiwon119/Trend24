@@ -1,15 +1,3 @@
-import styled from "styled-components";
-
-const BookSearch = () => {
-  return <BookSearchContainer>BookSearch</BookSearchContainer>;
-};
-
-const BookSearchContainer = styled.div`
-  height: 100%;
-  width: 100%;
-  display: grid;
-  grid-template-columns: repeat(6, 1fr);
-  grid-template-rows: repeat(6, 1fr);
-`;
-
-export default BookSearch;
+version https://git-lfs.github.com/spec/v1
+oid sha256:ee9b878a6cbfe8fb5b238abc42ca0e3e78163b6996e6c4e415c93a881dff88c6
+size 334

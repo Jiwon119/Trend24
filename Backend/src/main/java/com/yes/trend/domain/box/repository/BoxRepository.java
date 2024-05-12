@@ -1,8 +1,3 @@
-package com.yes.trend.domain.box.repository;
-
-import org.springframework.data.jpa.repository.JpaRepository;
-
-import com.yes.trend.domain.box.entity.Box;
-
-public interface BoxRepository extends JpaRepository<Box, Integer> {
-}
+version https://git-lfs.github.com/spec/v1
+oid sha256:4bdfdd7a059f06e60bfc8195ca2d92cd5c05cfb826be3410b306b3ab856154fa
+size 224

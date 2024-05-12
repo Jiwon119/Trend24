@@ -1,19 +1,3 @@
-import styled from "styled-components";
-
-const STKeyword = () => {
-  return (
-    <STKeywordContainer>
-      <div>STKeyword</div>
-    </STKeywordContainer>
-  );
-};
-
-const STKeywordContainer = styled.div`
-  width: 100%;
-  height: 100%;
-  grid-column: 4 / 7;
-  grid-row: 3 / 7;
-  border: 1px solid #000;
-`;
-
-export default STKeyword;
+version https://git-lfs.github.com/spec/v1
+oid sha256:c4274ffa6e0b9ec98dc8ca90d1806a7023f5b4c29c27b874c83730bce5464dec
+size 332

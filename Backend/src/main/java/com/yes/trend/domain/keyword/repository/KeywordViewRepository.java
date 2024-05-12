@@ -1,12 +1,3 @@
-package com.yes.trend.domain.keyword.repository;
-
-import java.time.LocalDateTime;
-import java.util.List;
-
-import org.springframework.data.jpa.repository.JpaRepository;
-
-import com.yes.trend.domain.keyword.entity.KeywordView;
-
-public interface KeywordViewRepository extends JpaRepository<KeywordView, Integer> {
-	List<KeywordView> findByCreatedTimeBetweenOrderByCreatedTimeDescRankingAsc(LocalDateTime start, LocalDateTime end);
-}
+version https://git-lfs.github.com/spec/v1
+oid sha256:314ce63983654dbca6ee736a56979425edc77f1207a7a96f3bd3080a04573601
+size 430
