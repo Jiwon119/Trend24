@@ -1,12 +1,3 @@
-package com.yes.trend.api.auth.mapper;
-
-import com.yes.trend.api.auth.dto.AuthDto;
-import com.yes.trend.domain.admin.entity.Admin;
-import org.mapstruct.Mapper;
-import org.mapstruct.ReportingPolicy;
-
-@Mapper(componentModel = "spring", unmappedTargetPolicy = ReportingPolicy.IGNORE)
-
-public interface AuthMapper {
-  Admin AuthDtoToAdmin(AuthDto.Post authDto);
-}
+version https://git-lfs.github.com/spec/v1
+oid sha256:90720927ea2bccabd1b2b16740ad2840120bd3319902c446876d260a3462879c
+size 360
