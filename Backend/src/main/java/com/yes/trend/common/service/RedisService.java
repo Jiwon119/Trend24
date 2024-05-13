@@ -1,20 +1,3 @@
-package com.yes.trend.common.service;
-
-import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.data.redis.core.RedisTemplate;
-import org.springframework.stereotype.Service;
-
-@Service
-public class RedisService {
-
-	@Autowired
-	private RedisTemplate<String, String> redisTemplate;
-
-	public void setValue(String key, String value) {
-		redisTemplate.opsForValue().set(key, value);
-	}
-
-	public String getValue(String key) {
-		return redisTemplate.opsForValue().get(key);
-	}
-}
+version https://git-lfs.github.com/spec/v1
+oid sha256:be2447222418b2f04a587adc015d4a288e2093efc7145f290dde49a03cfb32ff
+size 514
