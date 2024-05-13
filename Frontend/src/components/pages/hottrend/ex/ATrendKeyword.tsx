@@ -1,3 +1,17 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:d402dc1d974c935ac089cb594f711a3b443cab8da1703ab7ea7e12d1fe564766
-size 315
+import styled from "styled-components";
+
+const ATrendKeyword = () => {
+  return (
+    <ATrendKeywordContainer>
+      <div>ATrendKeyword</div>
+    </ATrendKeywordContainer>
+  );
+};
+
+const ATrendKeywordContainer = styled.div`
+  width: 100%;
+  height: 100%;
+  border: 1px solid #000;
+`;
+
+export default ATrendKeyword;

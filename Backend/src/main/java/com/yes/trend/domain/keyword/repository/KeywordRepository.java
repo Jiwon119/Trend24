@@ -1,3 +1,12 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:a22953fb3985a281eb2effb1095b5153d6f324319bfb43516b38bc1e546643a0
-size 450
+package com.yes.trend.domain.keyword.repository;
+
+import com.yes.trend.domain.keyword.entity.Keyword;
+import org.springframework.data.jpa.repository.JpaRepository;
+
+import java.time.LocalDateTime;
+import java.util.List;
+
+public interface KeywordRepository extends JpaRepository<Keyword, Integer> {
+  List<Keyword> findByNameAndCreatedTimeBetween(String name, LocalDateTime start,
+                                                LocalDateTime end);
+}

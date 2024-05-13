@@ -1,3 +1,12 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:bed207c7cf5ffecda44167a4f851b74ab411166ff32ebb799763dd970428a4ef
-size 466
+package com.yes.trend.domain.book.repository;
+
+import com.yes.trend.domain.book.entity.Book;
+import org.springframework.data.domain.Page;
+import org.springframework.data.domain.Pageable;
+import org.springframework.data.jpa.repository.JpaRepository;
+import org.springframework.data.querydsl.QuerydslPredicateExecutor;
+
+public interface BookRepository extends JpaRepository<Book, Integer>, QuerydslPredicateExecutor<Book> {
+  Page<Book> findAll(Pageable pageable);
+
+}
