@@ -1,3 +1,8 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:94cfab4a955cd0370ba68cd320bd77c616e63c87544e252f5d3b0aa469db58da
-size 225
+package com.yes.trend.domain.tag.repository;
+
+import org.springframework.data.jpa.repository.JpaRepository;
+
+import com.yes.trend.domain.tag.entity.Tag;
+
+public interface TagRepository extends JpaRepository<Tag, Integer> {
+}
