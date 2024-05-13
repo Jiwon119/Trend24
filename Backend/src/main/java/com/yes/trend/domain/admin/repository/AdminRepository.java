@@ -1,12 +1,3 @@
-package com.yes.trend.domain.admin.repository;
-
-import java.util.Optional;
-
-import org.springframework.data.jpa.repository.JpaRepository;
-
-import com.yes.trend.domain.admin.entity.Admin;
-
-public interface AdminRepository extends JpaRepository<Admin, Integer> {
-
-	Optional<Admin> findByAdminId(String adminId);
-}
+version https://git-lfs.github.com/spec/v1
+oid sha256:0f15e7cf20fa5b47121ebba49886e6888fec3496f99d6a43c8de14178a72a391
+size 312

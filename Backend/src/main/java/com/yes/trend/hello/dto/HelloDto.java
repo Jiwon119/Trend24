@@ -1,24 +1,3 @@
-package com.yes.trend.hello.dto;
-
-import lombok.AllArgsConstructor;
-import lombok.Getter;
-import lombok.NoArgsConstructor;
-
-public class HelloDto {
-
-	@Getter
-	@AllArgsConstructor
-	@NoArgsConstructor
-	public static class Request {
-
-		private String hello;
-	}
-
-	@Getter
-	@AllArgsConstructor
-	public static class Response {
-
-		private String world;
-	}
-}
-
+version https://git-lfs.github.com/spec/v1
+oid sha256:773bd69eb8a4937cf396c27c7fa713ad8f65a86075a8aa982b707a8bb499928a
+size 365

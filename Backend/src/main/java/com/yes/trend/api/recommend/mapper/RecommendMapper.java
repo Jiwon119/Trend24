@@ -1,12 +1,3 @@
-package com.yes.trend.api.recommend.mapper;
-
-import org.mapstruct.Mapper;
-import org.mapstruct.ReportingPolicy;
-
-import com.yes.trend.api.recommend.dto.KeywordWithBookDto;
-import com.yes.trend.api.recommend.dto.RecommendDto;
-
-@Mapper(componentModel = "spring", unmappedTargetPolicy = ReportingPolicy.IGNORE)
-public interface RecommendMapper {
-	RecommendDto.BookWithKeywords KeywordWithBookDtoToBookWithKeywords(KeywordWithBookDto dto);
-}
+version https://git-lfs.github.com/spec/v1
+oid sha256:239d54ac319dbc72380e1988fd1e7398d65e34085aef3471545c880effc93993
+size 438
