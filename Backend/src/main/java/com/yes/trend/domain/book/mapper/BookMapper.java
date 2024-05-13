@@ -1,14 +1,3 @@
-package com.yes.trend.domain.book.mapper;
-
-import org.mapstruct.Mapper;
-import org.mapstruct.Mapping;
-import org.mapstruct.ReportingPolicy;
-
-import com.yes.trend.domain.book.dto.BookDto;
-import com.yes.trend.domain.book.entity.Book;
-
-@Mapper(componentModel = "spring", unmappedTargetPolicy = ReportingPolicy.IGNORE)
-public interface BookMapper {
-	@Mapping(target = "bookId", source = "id")
-	BookDto.Response BookToDto(Book book);
-}
+version https://git-lfs.github.com/spec/v1
+oid sha256:f7e52e9543b5cf92d21696e3cd57481c5ee00c58f08361e2237f819e259bd1b0
+size 431
