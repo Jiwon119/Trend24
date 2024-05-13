@@ -1,3 +1,20 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:a0cc953355d9ec485a5a5ec42278f629616228de2c274bda6266839cc17ccc7a
-size 425
+package com.yes.trend.common.dto;
+
+import org.springframework.data.domain.Page;
+
+import lombok.Getter;
+
+@Getter
+public class PageInfoDto {
+	private int page;
+	private int size;
+	private long totalElements;
+	private int totalPages;
+
+	public PageInfoDto(Page<?> page) {
+		this.page = page.getNumber();
+		this.size = page.getSize();
+		this.totalElements = page.getTotalElements();
+		this.totalPages = page.getTotalPages();
+	}
+}
