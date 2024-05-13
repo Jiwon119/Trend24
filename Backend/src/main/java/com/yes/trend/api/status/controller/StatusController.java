@@ -1,14 +1,3 @@
-package com.yes.trend.api.status.controller;
-
-import org.springframework.web.bind.annotation.RequestMapping;
-import org.springframework.web.bind.annotation.RestController;
-
-import lombok.RequiredArgsConstructor;
-import lombok.extern.slf4j.Slf4j;
-
-@Slf4j
-@RestController
-@RequiredArgsConstructor
-@RequestMapping("/status")
-public class StatusController {
-}
+version https://git-lfs.github.com/spec/v1
+oid sha256:8bfd6c6c04c6b00cd973d81be5d094eaf6cfde53093435a9d39b5d996a7fc8cb
+size 1431
