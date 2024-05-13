@@ -1,13 +1,3 @@
-package com.yes.trend.api.custom.controller;
-
-import lombok.RequiredArgsConstructor;
-import lombok.extern.slf4j.Slf4j;
-import org.springframework.web.bind.annotation.RequestMapping;
-import org.springframework.web.bind.annotation.RestController;
-
-@Slf4j
-@RestController
-@RequiredArgsConstructor
-@RequestMapping("/custom")
-public class CustomController {
-}
+version https://git-lfs.github.com/spec/v1
+oid sha256:f7c3889d18cc2f5c07b999d54509e3590af4926b328d74e21fed5a90efb16af6
+size 1920
