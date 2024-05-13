@@ -1,22 +1,3 @@
-package com.yes.trend.api.status.dto;
-
-import com.yes.trend.domain.book.dto.BookDto;
-import lombok.Getter;
-import lombok.NoArgsConstructor;
-import lombok.Setter;
-
-import java.util.List;
-
-public class StatusDto {
-  @Getter
-  @Setter
-  @NoArgsConstructor
-  public static class WeeklyTopClickBooksDto extends BookDto.Response {
-    private Integer bookId;
-    private Integer clickCountSum;
-    private String productName;
-    private Integer ranking;
-    private List<Integer> weeklyClickCount;
-
-  }
-}
+version https://git-lfs.github.com/spec/v1
+oid sha256:351cad70b857cc5372c2538190b4db8a4a3b2bfe3b507e73cdca262926d0b741
+size 614
