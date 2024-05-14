@@ -1,15 +1,3 @@
-package com.yes.trend.api.trend.mapper;
-
-import org.mapstruct.Mapper;
-import org.mapstruct.Mapping;
-import org.mapstruct.ReportingPolicy;
-
-import com.yes.trend.domain.keyword.dto.KeywordDto;
-import com.yes.trend.domain.keyword.entity.KeywordView;
-
-@Mapper(componentModel = "spring", unmappedTargetPolicy = ReportingPolicy.IGNORE)
-public interface TrendMapper {
-	@Mapping(target = "keywordId", source = "keywordView.id")
-	KeywordDto.Response KeywordViewToResponseDto(KeywordView keywordView);
-
-}
+version https://git-lfs.github.com/spec/v1
+oid sha256:99f307d1cc6719ac50d20f819a5c27aa7145a4e055c779d8a2ee1371c8c471fe
+size 495
