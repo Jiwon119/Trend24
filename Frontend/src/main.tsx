@@ -1,17 +1,3 @@
-import React from "react";
-import ReactDOM from "react-dom/client";
-import App from "./App.tsx";
-import { Provider } from "react-redux";
-import store from "./store/store.tsx";
-import { BrowserRouter as Router } from "react-router-dom";
-
-
-ReactDOM.createRoot(document.getElementById("root")!).render(
-  <React.StrictMode>
-    <Provider store={store}>
-      <Router>
-        <App />
-      </Router>
-    </Provider>
-  </React.StrictMode>
-);
+version https://git-lfs.github.com/spec/v1
+oid sha256:1a031d0b9a916f003a5969f3cf2c0e119fb781600c8ee4149a4958cf833c9c0a
+size 529
