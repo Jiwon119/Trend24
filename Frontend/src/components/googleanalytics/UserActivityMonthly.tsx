@@ -1,3 +1,26 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:718a8fc5cab9d5d9ba4beec51f847ce533d6449dfa4623151c156f2122bbf227
-size 459
+import styled from "styled-components";
+
+const UserActivityMonthly = () => {
+  return (
+    <Container>
+      <Title>월간 사용자 활동</Title>
+    </Container>
+  );
+};
+
+const Container = styled.div`
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+`;
+
+const Title = styled.div`
+  margin-top: 20px;
+  font-size: 24px;
+  font-weight: bold;
+`;
+
+export default UserActivityMonthly;
