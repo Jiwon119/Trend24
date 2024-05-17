@@ -1,3 +1,8 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:098ba669681b7440cc9de2721cca05d6ae18039469cce57b22622b6df62a2c0f
-size 226
+package com.yes.trend.api.custom.mapper;
+
+import org.mapstruct.Mapper;
+import org.mapstruct.ReportingPolicy;
+
+@Mapper(componentModel = "spring", unmappedTargetPolicy = ReportingPolicy.IGNORE)
+public interface CustomMapper {
+}
