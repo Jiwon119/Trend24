@@ -1,14 +1,3 @@
-package com.yes.trend.api.status.service;
-
-import org.springframework.stereotype.Service;
-import org.springframework.transaction.annotation.Transactional;
-
-import lombok.RequiredArgsConstructor;
-import lombok.extern.slf4j.Slf4j;
-
-@Service
-@RequiredArgsConstructor
-@Slf4j
-@Transactional(readOnly = true)
-public class StatusService {
-}
+version https://git-lfs.github.com/spec/v1
+oid sha256:d02e6705b3dca54ebba02ba9ccd4d938eadf11261c4af071acb774eda6e8b8f8
+size 5193
