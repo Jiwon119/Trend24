@@ -1,11 +1,3 @@
-package com.yes.trend.domain.question.repository;
-
-import com.yes.trend.domain.question.entity.Question;
-import org.springframework.data.jpa.repository.JpaRepository;
-
-import java.util.List;
-
-public interface QuestionRepository extends JpaRepository<Question, Integer> {
-
-    List<Question> findAll();
-}
+version https://git-lfs.github.com/spec/v1
+oid sha256:3f28659344291abe9bd06df0d5a276dfd46ecea7b180d7bc25be40e94c8dcc04
+size 304
