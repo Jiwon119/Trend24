@@ -1,8 +1,3 @@
-package com.yes.trend.domain.bookclick.repository;
-
-import org.springframework.data.jpa.repository.JpaRepository;
-
-import com.yes.trend.domain.bookclick.entity.BookClick;
-
-public interface BookClickRepository extends JpaRepository<BookClick, Integer> {
-}
+version https://git-lfs.github.com/spec/v1
+oid sha256:7ea490d23f93e74e76b2cde051e58246c0b1a17cbc8ad9b8aaa353d0a9668069
+size 880

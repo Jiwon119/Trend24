@@ -1,14 +1,3 @@
-package com.yes.trend.api.custom.service;
-
-import org.springframework.stereotype.Service;
-import org.springframework.transaction.annotation.Transactional;
-
-import lombok.RequiredArgsConstructor;
-import lombok.extern.slf4j.Slf4j;
-
-@Service
-@RequiredArgsConstructor
-@Slf4j
-@Transactional(readOnly = true)
-public class CustomService {
-}
+version https://git-lfs.github.com/spec/v1
+oid sha256:0476fdea01ce26a2ad6e2a959a66c45582bf97e7da692ac6dba88ce9a2148e8c
+size 1553
