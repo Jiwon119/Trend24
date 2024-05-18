@@ -1,19 +1,3 @@
-import styled from "styled-components";
-
-const UserStayTimeGraph = () => {
-  return (
-    <UserStayTimeGraphContainer>
-      <div>UserStayTimeGraph</div>
-    </UserStayTimeGraphContainer>
-  );
-};
-
-const UserStayTimeGraphContainer = styled.div`
-  width: 100%;
-  height: 100%;
-  grid-column: 1 / 7;
-  grid-row: 4 / 7;
-  border: 1px solid #000;
-`;
-
-export default UserStayTimeGraph;
+version https://git-lfs.github.com/spec/v1
+oid sha256:70668c0f42088bdd7621f2b389c11b97b47944b4e91fbdbd292a878bf13f43cb
+size 380
