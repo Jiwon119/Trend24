@@ -1,20 +1,3 @@
-package com.yes.trend.domain.question.entity;
-
-import com.yes.trend.common.entity.BaseEntity;
-
-import jakarta.persistence.Column;
-import jakarta.persistence.Entity;
-import jakarta.persistence.Table;
-import lombok.AccessLevel;
-import lombok.Getter;
-import lombok.NoArgsConstructor;
-
-@Entity
-@Table(name = "question")
-@Getter
-@NoArgsConstructor(access = AccessLevel.PROTECTED)
-public class Question extends BaseEntity {
-
-	@Column(length = 255)
-	private String questionText;
-}
+version https://git-lfs.github.com/spec/v1
+oid sha256:7f20a682e46eb6c4a32f2ce3f93449c2661b3d7b09e7e07b6a9f36df570363c3
+size 473
