@@ -1,3 +1,17 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:7c294e603f2e6313d10fee87bcfa13e7f2c063d460b6f00e6b9576576627d17d
-size 325
+# 실행 방법
+
+- windows인 경우 git bash에서 실행시켜야 합니다.
+
+- java 17이 설치되어 있어야 합니다.
+
+- .env 만들어주세요. </br>
+  ``` shell
+  PORT=8081
+  ```
+
+- 현재 디렉터리에서 다음 명령어 실행시키세요. </br>
+  ``` shell
+  chmod +x run-docker.sh
+  ./run-docker.sh
+  ```
+
