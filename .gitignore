@@ -1,0 +1,10 @@
+.env
+
+# Ignore specific folder and its contents
+S10P31S203/
+
+# Ignore files with specific extension
+*.npy
+
+# Ignore a specific file
+book_yes24.json
