@@ -1,3 +1,15 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:717ceb10cddb08c5689e2891bc8cd65d4230c2b65ec7c070bfa13ea401a51ccf
-size 327
+package com.yes.trend.api.status.dto;
+
+import lombok.AllArgsConstructor;
+import lombok.Getter;
+import lombok.NoArgsConstructor;
+
+@NoArgsConstructor
+@AllArgsConstructor
+@Getter
+// DB에서 꺼낸 값 넣는 dto
+public class TopKeywordDto {
+	private String categories;
+	private String keywordName;
+	private Long clickCountSum;
+}

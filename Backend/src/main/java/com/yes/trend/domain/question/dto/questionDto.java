@@ -1,3 +1,16 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:2dda7a0a08803e9dd87e42d50a15563f55946c80d1bd3588b326d6407676347c
-size 290
+package com.yes.trend.domain.question.dto;
+
+import lombok.Getter;
+import lombok.NoArgsConstructor;
+import lombok.ToString;
+
+public class questionDto {
+
+	@Getter
+	@NoArgsConstructor
+	@ToString
+	public static class Response {
+		private Integer questionId;
+		private String questionText;
+	}
+}
