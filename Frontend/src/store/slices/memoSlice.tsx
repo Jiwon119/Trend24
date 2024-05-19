@@ -1,3 +1,23 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:a2fe95f2dc14d27ff18eef86885a7f93c194331d5ef46708b1004d503cdc71ef
-size 462
+import { createSlice } from "@reduxjs/toolkit";
+import type { PayloadAction } from "@reduxjs/toolkit";
+
+interface MemoState {
+  memo: string;
+}
+
+const initialState: MemoState = {
+  memo: "",
+};
+
+const memoSlice = createSlice({
+  name: "memo",
+  initialState,
+  reducers: {
+    setMemo: (state, action: PayloadAction<string>) => {
+      state.memo = action.payload;
+    },
+  },
+});
+
+export const { setMemo } = memoSlice.actions;
+export default memoSlice.reducer;
