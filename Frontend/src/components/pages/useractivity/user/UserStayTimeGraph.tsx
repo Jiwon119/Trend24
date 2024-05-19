@@ -1,23 +1,3 @@
-import { useEffect } from "react";
-import styled from "styled-components";
-
-const UserStayTimeGraph = () => {
-  useEffect(() => {
-    console.log("UserStayTimeGraph");
-  }, []);
-  return (
-    <UserStayTimeGraphContainer>
-      <div>UserStayTimeGraph</div>
-    </UserStayTimeGraphContainer>
-  );
-};
-
-const UserStayTimeGraphContainer = styled.div`
-  width: 100%;
-  height: 100%;
-  grid-column: 1 / 7;
-  grid-row: 4 / 7;
-  border: 1px solid #000;
-`;
-
-export default UserStayTimeGraph;
+version https://git-lfs.github.com/spec/v1
+oid sha256:5dd3ee7b378b93e7c5e63cf202b91461b8784d20ce828cac414e79cba0c7d187
+size 483
