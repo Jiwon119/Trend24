@@ -1,13 +1,3 @@
-package com.yes.trend.domain.keywordclick.repository;
-
-import java.time.LocalDateTime;
-import java.util.Optional;
-
-import org.springframework.data.jpa.repository.JpaRepository;
-
-import com.yes.trend.domain.keywordclick.entity.KeywordClick;
-
-public interface KeywordClickRepository extends JpaRepository<KeywordClick, Integer> {
-	Optional<KeywordClick> findByKeywordNameAndCategory_IdAndCreatedTimeBetween(String keywordName, Byte CategoryId,
-		LocalDateTime startDate, LocalDateTime endDate);
-}
+version https://git-lfs.github.com/spec/v1
+oid sha256:ffb60f91c0dfeda79380d50860ca3f96c1b18e2d66e57c97651ff03b1e7dc8e6
+size 1613
