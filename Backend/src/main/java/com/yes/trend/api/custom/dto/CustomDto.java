@@ -1,3 +1,27 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:aacbe38bcaae127ece3df04d9d4eb508359560825679b0aa3973862332a19a65
-size 693
+package com.yes.trend.api.custom.dto;
+
+import jakarta.validation.constraints.NotBlank;
+import jakarta.validation.constraints.Size;
+import lombok.AllArgsConstructor;
+import lombok.Getter;
+import lombok.NoArgsConstructor;
+
+public class CustomDto {
+	@Getter
+	@NoArgsConstructor
+	@AllArgsConstructor
+	public static class PatchPageName {
+		// 페이지 제목
+		@NotBlank(message = "페이지 이름을 입력하세요.")
+		@Size(max = 100, message = "이름은 100자 이내여야 합니다.")
+		private String name;
+	}
+
+	@Getter
+	@NoArgsConstructor
+	@AllArgsConstructor
+	public static class Components {
+		@NotBlank(message = "내용을 입력해주세요")
+		private String customContents;
+	}
+}

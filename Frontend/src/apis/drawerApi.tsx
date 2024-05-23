@@ -1,3 +1,32 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:1738eed71c14aaa70cf2cd9951dca2c6c34050d9848fa4334223cfd2d2a95b79
-size 837
+import { api } from "./apiConfig";
+
+export const getDrawer = async ({showList, page, size }: { showList: boolean; page: number; size: number }) => {
+  try{
+    const response = await api.get(`/drawer?show-list=${showList}&page=${page}&size=${size}`);
+    return response.data.result.list;
+  }catch(error){
+    console.log(error);
+  }
+}
+
+export const postDrawerKeyword = async (keyword:string) => {
+  try {
+    const response = await api.post("/drawer", {
+      name: `${keyword}`,
+    });
+    return response.data.result;
+  } catch (error) {
+    console.log(error);
+  }
+};
+
+export const postDrawerBook = async (drawerId: number, bookId: number) => {
+  try {
+    const response = await api.post(`/drawer/${drawerId}`, {
+      bookId: `${bookId}`,
+    });
+    return response.data.result;
+  } catch (error) {
+    console.log(error);
+  }
+};

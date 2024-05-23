@@ -1,3 +1,30 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:a21b72dd53e4db208bf9a20cc60faac3d38c17714a11ecc174b73f071462f79f
-size 645
+import styled from "styled-components";
+import { useDeviceReportAPI } from "./ReportDataAPI";
+import DeviceUsers from "./Device/DeviceUsers";
+import DeviceAU from "./Device/DeviceAU";
+
+import DeviceTotalReport from "./Device/DeviceTotalReport";
+
+const GADateReport = () => {
+  useDeviceReportAPI();
+
+  return (
+    <ContentContainer>
+      <DeviceTotalReport />
+      <DeviceUsers />
+      <DeviceAU />
+    </ContentContainer>
+  );
+};
+
+const ContentContainer = styled.div`
+  display: grid;
+  grid-template-columns: 2fr 3fr 3fr;
+  gap: 10px;
+  width: 100%;
+  height: 100%;
+  box-sizing: border-box;
+  z-index: 1;
+`;
+
+export default GADateReport;

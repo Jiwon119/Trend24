@@ -1,3 +1,18 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:2c632f4d8d5b5ed5b8d83fa7c1f4d435176a079eab97fa160674e697f67b00fa
-size 652
+package com.yes.trend;
+
+import org.springframework.boot.SpringApplication;
+import org.springframework.boot.autoconfigure.SpringBootApplication;
+import org.springframework.boot.autoconfigure.security.servlet.SecurityAutoConfiguration;
+import org.springframework.context.annotation.PropertySource;
+import org.springframework.data.jpa.repository.config.EnableJpaAuditing;
+
+@PropertySource("classpath:/application-secrets.properties")
+@SpringBootApplication(exclude = SecurityAutoConfiguration.class)
+@EnableJpaAuditing
+public class TrendApplication {
+
+	public static void main(String[] args) {
+		SpringApplication.run(TrendApplication.class, args);
+	}
+
+}

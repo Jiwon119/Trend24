@@ -1,3 +1,40 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:262d49529ba587d54e4aee1055b66d638e8cbdb8d3011fef8ce3873d0d0812e2
-size 1105
+import { createSlice } from "@reduxjs/toolkit";
+import type { PayloadAction } from "@reduxjs/toolkit";
+
+import { customizedComponentListData } from "../../constants/DummyData";
+
+interface CustomizedComponentList {
+  componentName: string;
+  position: { x: number; y: number };
+  size: { width: number; height: number };
+}
+
+interface CustomizeState {
+  completeList: CustomizedComponentList[];
+  componentList: CustomizedComponentList[];
+}
+
+const customizeSlice = createSlice({
+  name: "customize",
+  initialState: {
+    completeList: [],
+    componentList: [...customizedComponentListData],
+  } as CustomizeState, // 초기 상태를 CustomizeState로 명시
+  reducers: {
+    setCompleteList: (
+      state,
+      action: PayloadAction<CustomizedComponentList[]>
+    ) => {
+      state.completeList = action.payload;
+    },
+    setComponentList: (
+      state,
+      action: PayloadAction<CustomizedComponentList[]>
+    ) => {
+      state.componentList = action.payload;
+    },
+  },
+});
+
+export const { setCompleteList, setComponentList } = customizeSlice.actions;
+export default customizeSlice.reducer;

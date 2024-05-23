@@ -1,3 +1,23 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:c8e2059c86e865de9adcbb5d5901cfcfd002b53340df6b86e0371d9104a685b9
-size 534
+import { createSlice } from "@reduxjs/toolkit";
+import type { PayloadAction } from "@reduxjs/toolkit";
+
+interface EditpageState {
+  componentName: string[];
+}
+
+const initialState: EditpageState = {
+  componentName: [],
+};
+
+const editpageSlice = createSlice({
+  name: "editpage",
+  initialState,
+  reducers: {
+    setComponentName: (state, action: PayloadAction<string[]>) => {
+      state.componentName = action.payload;
+    },
+  },
+});
+
+export const { setComponentName } = editpageSlice.actions;
+export default editpageSlice.reducer;

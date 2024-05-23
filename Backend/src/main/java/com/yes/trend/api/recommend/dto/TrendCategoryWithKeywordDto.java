@@ -1,3 +1,22 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:353aa7873af54d6666574f8e1c250dad7bfa9ffa4fe03e69a36ab85405ee4a1a
-size 667
+package com.yes.trend.api.recommend.dto;
+
+import com.yes.trend.domain.keyword.dto.KeywordDto;
+
+import lombok.Getter;
+import lombok.NoArgsConstructor;
+import lombok.ToString;
+
+@Getter
+@NoArgsConstructor
+@ToString
+public class TrendCategoryWithKeywordDto extends KeywordDto.Response {
+	private Integer trendCategoryId;
+	private String trendCategoryName;
+
+	public TrendCategoryWithKeywordDto(Integer keywordId, String keywordName, Integer clickCount, Integer ranking,
+		Integer trendCategoryId, String trendCategoryName) {
+		super(keywordId, keywordName, clickCount, ranking);
+		this.trendCategoryId = trendCategoryId;
+		this.trendCategoryName = trendCategoryName;
+	}
+}

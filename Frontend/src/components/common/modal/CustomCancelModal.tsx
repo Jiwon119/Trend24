@@ -1,3 +1,55 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:f1f447ef505c12e428ceca16c68f57475c4eb5f501a7ad48de10a511d84ab422
-size 1044
+import styled from "styled-components";
+
+interface CustomCancelModalProps {
+  toggleModal: () => void;
+  cancelChange: () => void;
+}
+
+const CustomCancelModal = ({
+  toggleModal,
+  cancelChange,
+}: CustomCancelModalProps) => {
+  return (
+    <Container>
+      <Modal>
+        <Title>Do you want to cancel changes?</Title>
+        <ButtonContainer>
+          <Button onClick={cancelChange}>Yes</Button>
+          <Button onClick={toggleModal}>No</Button>
+        </ButtonContainer>
+      </Modal>
+    </Container>
+  );
+};
+
+const Container = styled.div`
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+`;
+
+const Modal = styled.div`
+  background-color: white;
+  width: 50%;
+  max-width: 400px;
+  padding: 20px;
+  border-radius: 8px;
+`;
+
+const Title = styled.div`
+  margin-bottom: 20px;
+`;
+
+const ButtonContainer = styled.div`
+  display: flex;
+  justify-content: space-between;
+`;
+
+const Button = styled.button`
+  padding: 5px;
+  border-radius: 5px;
+  border: 1px solid #000;
+`;
+
+export default CustomCancelModal;

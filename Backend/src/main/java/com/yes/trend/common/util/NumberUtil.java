@@ -1,3 +1,25 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:1cfdfab80ab457fdf599c28dd193b2cc8bec73b5913af06a02e20c1dd56fcab0
-size 698
+package com.yes.trend.common.util;
+
+public class NumberUtil {
+
+	/**
+	 * 1글자 이상이고 문자열이 1 이상의 정수인지 확인
+	 *
+	 * @param numberString 검사할 문자열
+	 * @return 1 이상의 정수이면 true, 아니면 false
+	 */
+	public static boolean isOver1(String numberString) {
+
+		return numberString != null && numberString.matches("[1-9]\\d*");
+	}
+
+	/**
+	 * 문자열이 0 이상의 정수인지 확인
+	 *
+	 * @param numberString 검사할 문자열
+	 * @return 0 이상의 정수이면 true, 아니면 false
+	 */
+	public static boolean isOver0(String numberString) {
+		return numberString != null && numberString.matches("\\d+") && !numberString.startsWith("-");
+	}
+}

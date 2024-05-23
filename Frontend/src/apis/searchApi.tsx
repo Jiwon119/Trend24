@@ -1,3 +1,36 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:17943e77c67077c409969c5344007fa4391eb6151a9311a9ef0693ccd90ebd21
-size 749
+import { api } from "./apiConfig";
+
+export const getSearchBook = async ({
+  title,
+  category,
+  page,
+  size,
+}: {
+  title: string;
+  category: string;
+  page: number;
+  size: number;
+}) => {
+  try {
+    let url = `/search/?page=${page}&size=${size}`;
+    if (title !== "") {
+      url += `&title=${title}`;
+    }
+    if (category !== "") {
+      url += `&category=${category}`;
+    }
+    const response = await api.get(url);
+    return response.data.result;
+  } catch (error) {
+    console.log(error);
+  }
+};
+
+export const getSearchBookSentence = async (sentence: string) => {
+  try {
+    const response = await api.get(`/search/live?sentence=${sentence}`);
+    return response.data.result.list;
+  } catch (error) {
+    console.log(error);
+  }
+};

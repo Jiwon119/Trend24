@@ -1,3 +1,19 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:d7fb86edbbf4e4d6d5054119bab57f30c1ea27ec120d47533d8e6655a2a42e26
-size 660
+package com.yes.trend.domain.question.repository;
+
+import java.util.List;
+
+import org.springframework.data.jpa.repository.JpaRepository;
+import org.springframework.data.jpa.repository.Query;
+import org.springframework.data.repository.query.Param;
+
+import com.yes.trend.domain.book.entity.Book;
+import com.yes.trend.domain.question.entity.Question;
+
+public interface QuestionRepository extends JpaRepository<Question, Integer> {
+
+	List<Question> findAll();
+
+	@Query("SELECT bqm.book FROM BookQuestionMap bqm WHERE bqm.question.id = :questionId ORDER BY bqm.recommendCnt DESC")
+	List<Book> findTop10BooksByQuestionId(@Param("questionId") Integer questionId);
+
+}

@@ -1,3 +1,26 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:68db62e13609514b9f78273b36117cc59a53732a1fb17efc43d6a7f334a79249
-size 813
+// Counter.tsx
+import React from "react";
+import { useSelector, useDispatch } from "react-redux";
+import { RootState, AppDispatch } from "./store";
+import { increment, decrement, incrementByAmount } from "./slices/counterSlice";
+
+const Counter: React.FC = () => {
+  const count = useSelector((state: RootState) => state.counter.value);
+  const dispatch: AppDispatch = useDispatch();
+
+  return (
+    <div>
+      <div>
+        <button onClick={() => dispatch(increment())}>+</button>
+        <span>{count}</span>
+        <button onClick={() => dispatch(decrement())}>-</button>
+      </div>
+      <div>
+        <button onClick={() => dispatch(incrementByAmount(10))}>+10</button>
+        <button onClick={() => dispatch(incrementByAmount(-10))}>-10</button>
+      </div>
+    </div>
+  );
+};
+
+export default Counter;

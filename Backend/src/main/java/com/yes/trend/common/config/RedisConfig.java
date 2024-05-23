@@ -1,3 +1,22 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:715cbbdcceeb7e387ef6690eab24426f1ac2cc02b45e70718c2a2b33a4b0c848
-size 888
+package com.yes.trend.common.config;
+
+import org.springframework.context.annotation.Bean;
+import org.springframework.context.annotation.Configuration;
+import org.springframework.data.redis.connection.RedisConnectionFactory;
+import org.springframework.data.redis.core.RedisTemplate;
+import org.springframework.data.redis.serializer.GenericJackson2JsonRedisSerializer;
+import org.springframework.data.redis.serializer.GenericToStringSerializer;
+
+@Configuration
+public class RedisConfig {
+
+	@Bean
+	public RedisTemplate<?, ?> redisTemplate(RedisConnectionFactory connectionFactory) {
+		RedisTemplate<?, ?> redisTemplate = new RedisTemplate<>();
+		redisTemplate.setConnectionFactory(connectionFactory);
+		redisTemplate.setKeySerializer(new GenericToStringSerializer<>(Integer.class));
+		redisTemplate.setValueSerializer(new GenericJackson2JsonRedisSerializer());
+
+		return redisTemplate;
+	}
+}

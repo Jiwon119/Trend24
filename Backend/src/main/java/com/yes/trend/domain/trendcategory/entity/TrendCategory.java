@@ -1,3 +1,34 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:68b5c021f713db604c4133eb59ad17e75a6f906a8b530e8bcf1c754a8724702d
-size 913
+package com.yes.trend.domain.trendcategory.entity;
+
+import java.util.List;
+
+import com.yes.trend.common.entity.BaseEntity;
+import com.yes.trend.domain.keyword.entity.Keyword;
+import com.yes.trend.domain.keywordclick.entity.KeywordClick;
+
+import jakarta.persistence.Column;
+import jakarta.persistence.Entity;
+import jakarta.persistence.FetchType;
+import jakarta.persistence.OneToMany;
+import jakarta.persistence.Table;
+import lombok.AccessLevel;
+import lombok.Getter;
+import lombok.NoArgsConstructor;
+
+@Entity
+@Table(name = "trend_category")
+@Getter
+@NoArgsConstructor(access = AccessLevel.PROTECTED)
+public class TrendCategory extends BaseEntity {
+
+	@Column(length = 100)
+	private String name;
+	private Byte code;
+
+	@OneToMany(mappedBy = "category", fetch = FetchType.LAZY)
+	private List<Keyword> keywords;
+
+	@OneToMany(mappedBy = "category", fetch = FetchType.LAZY)
+	private List<KeywordClick> keywordClicks;
+
+}

@@ -1,3 +1,36 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:e37d95dce52bba7ad960e3f67de93d48943ac37f6f79729f956f9df589722e17
-size 851
+package com.yes.trend.domain.bookclick.entity;
+
+import com.yes.trend.common.entity.BaseEntity;
+import com.yes.trend.domain.book.entity.Book;
+
+import jakarta.persistence.Entity;
+import jakarta.persistence.FetchType;
+import jakarta.persistence.JoinColumn;
+import jakarta.persistence.ManyToOne;
+import jakarta.persistence.Table;
+import lombok.AccessLevel;
+import lombok.Getter;
+import lombok.NoArgsConstructor;
+import lombok.ToString;
+
+@Entity
+@Table(name = "book_click")
+@Getter
+@ToString
+@NoArgsConstructor(access = AccessLevel.PROTECTED)
+public class BookClick extends BaseEntity {
+	@ManyToOne(fetch = FetchType.LAZY)
+	@JoinColumn(name = "book_id")
+	private Book book;
+
+	private Integer count = 0;
+
+	public BookClick(Book book) {
+		this.book = book;
+	}
+
+	public void addClickCount() {
+		Integer click = this.getCount() + 1;
+		this.count = click;
+	}
+}

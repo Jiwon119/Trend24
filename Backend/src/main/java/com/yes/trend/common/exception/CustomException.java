@@ -1,3 +1,25 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:6ef562c9fd1d65324c354ac35ae98f14eaa0a97d1c59e09492ada73db012932d
-size 517
+package com.yes.trend.common.exception;
+
+import com.yes.trend.common.costants.ErrorCode;
+
+import lombok.Builder;
+import lombok.Getter;
+
+@Getter
+public class CustomException extends RuntimeException {
+
+	// exception의 원인이 된 값
+	private Object data;
+	private ErrorCode errorCode;
+
+	public CustomException(ErrorCode errorCode) {
+		super(errorCode.getMessage());
+		this.errorCode = errorCode;
+	}
+
+	@Builder
+	public CustomException(ErrorCode errorCode, Object data) {
+		this(errorCode);
+		this.data = data;
+	}
+}

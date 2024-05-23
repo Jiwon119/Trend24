@@ -1,3 +1,25 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:829e510bf850af5e56d435891da8514cc6295ec2ff26df0cd5ff5000dd4ea83f
-size 782
+package com.yes.trend.domain.keyword.service;
+
+import org.springframework.stereotype.Service;
+import org.springframework.transaction.annotation.Transactional;
+
+import com.yes.trend.common.costants.ErrorCode;
+import com.yes.trend.common.exception.CustomException;
+import com.yes.trend.domain.keyword.entity.Keyword;
+import com.yes.trend.domain.keyword.repository.KeywordRepository;
+
+import lombok.RequiredArgsConstructor;
+import lombok.extern.slf4j.Slf4j;
+
+@Service
+@Slf4j
+@Transactional(readOnly = true)
+@RequiredArgsConstructor
+public class KeywordService {
+	private final KeywordRepository keywordRepository;
+
+	public Keyword findById(Integer keywordId) {
+		return keywordRepository.findById(keywordId)
+			.orElseThrow(() -> new CustomException(ErrorCode.NO_ID, keywordId));
+	}
+}

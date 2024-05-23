@@ -1,3 +1,82 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:b8bb1b186a9a09fad8dfc1a726834460eeacf037cce5a692c4b48819f21e9f8f
-size 1274
+// 트렌드 검색 페이지 더미데이터
+interface TrendCategoryDataType {
+  trendCategoryId: number;
+  name: string;
+  keywords: {
+    keywordId: number;
+    name: string;
+  }[];
+}
+
+export const trendCategoryData: TrendCategoryDataType[] = [
+  {
+    trendCategoryId: 1,
+    name: "it",
+    keywords: [
+      {
+        keywordId: 1,
+        name: "인공지능",
+      },
+      {
+        keywordId: 2,
+        name: "IoT",
+      },
+      {
+        keywordId: 1,
+        name: "블록체인",
+      },
+      {
+        keywordId: 2,
+        name: "자동화",
+      },
+      {
+        keywordId: 1,
+        name: "IT",
+      },
+      {
+        keywordId: 2,
+        name: "빅데이터",
+      },
+    ],
+  },
+  {
+    trendCategoryId: 2,
+    name: "부동산",
+    keywords: [
+      {
+        keywordId: 3,
+        name: "토비",
+      },
+    ],
+  },
+  {
+    trendCategoryId: 2,
+    name: "금융",
+    keywords: [
+      {
+        keywordId: 3,
+        name: "토비",
+      },
+    ],
+  },
+  {
+    trendCategoryId: 2,
+    name: "게임",
+    keywords: [
+      {
+        keywordId: 3,
+        name: "토비",
+      },
+    ],
+  },
+  {
+    trendCategoryId: 2,
+    name: "취미",
+    keywords: [
+      {
+        keywordId: 3,
+        name: "토비",
+      },
+    ],
+  },
+];

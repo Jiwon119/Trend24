@@ -1,3 +1,22 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:e0a66a91a5e4108a3bd4871cf37b91337e81a09d1fd1081cd65d58b381f5f544
-size 796
+package com.yes.trend.domain.origindata.repository;
+
+import java.util.List;
+
+import org.springframework.data.jpa.repository.JpaRepository;
+import org.springframework.data.jpa.repository.Query;
+import org.springframework.data.repository.query.Param;
+
+import com.yes.trend.api.trend.dto.KeywordOriginDataDto;
+import com.yes.trend.domain.origindata.entity.OriginData;
+
+public interface OriginDataRepository extends JpaRepository<OriginData, Integer> {
+
+	@Query(
+		"SELECT NEW com.yes.trend.api.trend.dto.KeywordOriginDataDto(p.id, p.name, od.uri, od.contents)" +
+			" FROM TrendSource ts " +
+			" JOIN ts.originData od " +
+			" JOIN od.platform p " +
+			" WHERE ts.keyword.id = :keywordId"
+	)
+	List<KeywordOriginDataDto> findKeywordOriginDataDtoByKeywordId(@Param("keywordId") Integer keywordId);
+}

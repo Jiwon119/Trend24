@@ -1,3 +1,47 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:c36ea16d3e5e1ad16bbae272d9aa91423e956160a04d8ec736a24969c4d0b592
-size 1334
+import { createSlice } from "@reduxjs/toolkit";
+import { PayloadAction } from "@reduxjs/toolkit";
+
+import { customizedComponentListData } from "../../constants/DummyData";
+import { CustomPageComponentlistProps } from "../../constants/DummyData";
+
+interface CustomPageState {
+  initialComponentList: CustomPageComponentlistProps[];
+  customizedComponentList: CustomPageComponentlistProps[];
+  pageTitle: string;
+}
+
+const initialState: CustomPageState = {
+  initialComponentList: [],
+  customizedComponentList: [],
+  // customizedComponentList: [...customizedComponentListData],
+  pageTitle: "커스텀페이지",
+};
+
+const customPageSlice = createSlice({
+  name: "customPage",
+  initialState,
+  reducers: {
+    setInitialComponentList: (
+      state,
+      action: PayloadAction<CustomPageComponentlistProps[]>
+    ) => {
+      state.initialComponentList = action.payload;
+    },
+    setCustomizedComponentList: (
+      state,
+      action: PayloadAction<CustomPageComponentlistProps[]>
+    ) => {
+      state.customizedComponentList = action.payload;
+    },
+    setPageTitle: (state, action: PayloadAction<string>) => {
+      state.pageTitle = action.payload;
+    },
+  },
+});
+
+export const {
+  setInitialComponentList,
+  setCustomizedComponentList,
+  setPageTitle,
+} = customPageSlice.actions;
+export default customPageSlice.reducer;

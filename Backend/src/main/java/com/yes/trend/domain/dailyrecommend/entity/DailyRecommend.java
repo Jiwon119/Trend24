@@ -1,3 +1,31 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:cded14e45d6f1c88aa1c0454e04cb90db569beadef78a1eb1cbb6431b7277a4f
-size 901
+package com.yes.trend.domain.dailyrecommend.entity;
+
+import java.util.List;
+
+import com.yes.trend.common.entity.BaseEntity;
+import com.yes.trend.domain.book.entity.Book;
+import com.yes.trend.domain.recommendkeyword.entity.RecommendKeyword;
+
+import jakarta.persistence.Entity;
+import jakarta.persistence.FetchType;
+import jakarta.persistence.JoinColumn;
+import jakarta.persistence.ManyToOne;
+import jakarta.persistence.OneToMany;
+import jakarta.persistence.Table;
+import lombok.AccessLevel;
+import lombok.Getter;
+import lombok.NoArgsConstructor;
+
+@Entity
+@Table(name = "daily_recommend")
+@Getter
+@NoArgsConstructor(access = AccessLevel.PROTECTED)
+public class DailyRecommend extends BaseEntity {
+
+	@ManyToOne(fetch = FetchType.LAZY)
+	@JoinColumn(name = "book_id")
+	private Book book;
+
+	@OneToMany(mappedBy = "dailyRecommend", fetch = FetchType.LAZY)
+	private List<RecommendKeyword> recommendKeywords;
+}
